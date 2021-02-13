@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <title>Weather App</title>
+</head>
+<body>
+  <div class="container d-flex flex-column justify-items-center align-items-center">
+    <h1 class="text-center mt-5 mb-4">Weather App</h1>
+
+    <form id="w-locationForm" class="row g-3">
+      <div class="col-auto">
+        <label for="w-locationInput" class="form-label visually-hidden">Location</label>
+        <input id="w-locationInput" class="form-control" type="text" placeholder="Enter location" />
+      </div>
+      <div class="col-auto">
+        <button id="w-button" class="btn btn-primary">Change Location</button>
+      </div>
+      <span id="error"></span>
+    </form>
+    
+
+    <h2 id="w-location"></h2>
+    <p id="w-condition"></p>
+    <p id="w-temp"></p>
+    <p id="w-feelsLike"></p>
+    <img src="" alt="" id="w-img">
+  </div>
+  <script src="storage.js"></script>
+  <script src="weather.js"></script>
+  <script src="ui.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
